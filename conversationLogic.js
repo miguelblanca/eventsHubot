@@ -135,7 +135,7 @@ module.exports = (bot) => {
           userInputDate(state.eventDate)
           let city = state.cityName;
           let classificationName = state.eventType;
-          let URLrequest = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=kGKXIVGZGjg8PmcN902QGrd2nbrzwx9h&startDateTime=' + startDate + '&endDateTime=' + endDate + '&sort=relevance,desc&city=' + city + '&classificationName=&' + classificationName + '&size=1&page=0&countryCode=AU'
+          let URLrequest = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apikey}&startDateTime=' + startDate + '&endDateTime=' + endDate + '&sort=relevance,desc&city=' + city + '&classificationName=&' + classificationName + '&size=1&page=0&countryCode=AU'
           bot.http(URLrequest).header('Accept', 'application/json').get()(function(err, response, body) {
             let data;
             data = JSON.parse(body)
