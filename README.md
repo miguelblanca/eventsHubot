@@ -67,3 +67,9 @@ user input
 srgordoAPP [7:28 PM] 
 <strong>The Whitlams w/ Sydney Symphony Orchestra
 https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RETINA_LANDSCAPE_16_9.jpg</strong>
+
+# Known Issues
+Error handling when object is undefined in the API response.
+Error handling when date is not valid. 
+Random results in the search. 
+
